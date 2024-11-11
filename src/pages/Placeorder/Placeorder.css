@@ -1,0 +1,138 @@
+/* Adjusting Place Order Layout */
+.place-order {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: flex-start;
+  gap: 30px; /* Adjust the gap between left and right sections */
+  margin-top: 50px;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+/* Left Section: Delivery Information */
+.place-order-left {
+  width: 100%;
+  max-width: 55%; /* Reduced the width to give more space to the right */
+  flex-grow: 1;
+}
+
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: palevioletred; 
+}
+
+
+.place-order-left input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lightpink;
+  border-radius: 4px;
+  outline-color: lightblue;
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+/* Right Section: Cart Totals */
+.place-order-right {
+  width: 100%;
+  max-width: 100%; /* Increased width of Cart Totals section */
+  flex-grow: 1;
+  margin-top: 60px; /* Align with the left side */
+}
+
+/* Cart Totals Section */
+.cart-total {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; 
+}
+
+.cart-total h2 {
+  font-size: 1.5rem;
+  color: #e91e63;
+}
+
+.cart-total-details {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 10px 0;
+}
+
+.cart-total-details .label {
+  font-size: 1.1rem;
+  color: darkmagenta;
+}
+
+.cart-total-details .value {
+  font-size: 1.1rem;
+  text-align: right;
+  color: palevioletred;
+}
+
+.cart-total hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.cart-total button {
+  border: none;
+  color: white;
+  background-color: #00bcd4;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .place-order {
+      gap: 20px; /* Reduce the gap */
+  }
+
+  .place-order-left, .place-order-right {
+      max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .place-order-right {
+      margin-top: 20px;
+  }
+
+  .cart-total {
+      width: 100%; /* Full width */
+  }
+}
+
+@media (max-width: 768px) {
+  .place-order {
+      flex-direction: column;
+      gap: 0;
+  }
+
+  .place-order-left, .place-order-right {
+      max-width: 100%; /* Full width on mobile */
+  }
+
+  .place-order-right {
+      margin-top: 20px;
+  }
+
+  .cart-total {
+      width: 100%;
+  }
+}

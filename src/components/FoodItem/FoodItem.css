@@ -1,0 +1,88 @@
+.food-item {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;  /* Apply border radius to the entire item */
+    box-shadow: 0px 0px 10px lightblue;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s;
+    overflow: hidden;  /* Ensures the image stays within the rounded corners */
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px lightpink;
+}
+
+.food-display-item img {
+    width: 100%;
+    height: auto;  /* Ensures the image scales correctly */
+    object-fit: cover;  /* Ensures the image covers the entire space without distortion */
+    border-radius: inherit;  /* Inherit the parent’s border-radius */
+}
+
+.food-item-info {
+    padding: 20px 25px; /* 20px for top and bottom, 25px for left and right */
+}
+
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; /* Adjust margin to add space below the name and rating */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.food-item-name-rating p {
+    font-size: 20px;
+    font-weight: 500;
+    color:rebeccapurple;
+}
+
+.food-item-name-rating img {
+    width: 70px;
+}
+
+.food-item-price {
+    color: indigo;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 5px; /* Adds space around the price */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.food-item-description {
+    font-size: 16px;
+    color: palevioletred;
+    margin-top: 10px;
+    padding-left: 5px; /* Same left padding */
+    padding-right: 5px; /* Same right padding */
+    line-height: 1.5;
+}
+.food-item-img-container{
+    position: relative;
+}
+.food-item-img-container .add{
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.food-item-counter{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 40px;
+    background-color: lightpink;
+}
+.food-item-counter-img{
+    width: 10px;
+}

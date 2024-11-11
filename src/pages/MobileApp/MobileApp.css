@@ -1,0 +1,14 @@
+.mobile-app {
+  text-align: center;
+  padding: 20px;
+  color: palevioletred; /* Default text color */
+}
+
+.mobile-app p {
+  color: paleturquoise; /* Specific color for paragraph text */
+}
+
+.mobile-app img {
+  width: 300px;
+  margin-top: 20px;
+}

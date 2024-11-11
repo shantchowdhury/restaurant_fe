@@ -1,0 +1,87 @@
+/* MyOrders.css */
+
+.my-Orders {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    color: #333;
+  }
+  
+  .my-Orders h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .my-orders-order {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+  }
+  
+  .my-orders-order:hover {
+    transform: translateY(-5px);
+  }
+  
+  .my-orders-order img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .my-orders-order p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .my-orders-order p span {
+    color: green;
+    font-size: 1.2rem;
+  }
+  
+  .my-orders-order p b {
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .my-orders-order button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-orders-order button:hover {
+    background-color: #0056b3;
+  }
+  
+  .my-orders-order p:last-of-type {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  .no-orders-found {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #888;
+  }
+  
