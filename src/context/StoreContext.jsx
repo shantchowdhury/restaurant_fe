@@ -9,7 +9,7 @@ const StoreContextProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState(""); // User authentication token
     const [food_list, setFoodList] = useState([]);
-    const url = "http://localhost:4000"; // API base URL
+    const url = "https://restaurant-be-uo5b.onrender.com"; // API base URL
     const navigate = useNavigate(); // Initialize useNavigate
 
     const redirectToHome = () => {
